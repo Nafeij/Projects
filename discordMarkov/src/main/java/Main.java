@@ -21,7 +21,7 @@ public class Main {
     public static void main(String[] args) {
         JDA api;
         try {
-            api = JDABuilder.createDefault("OTUyNzc0Nzk2MTM4MTM5Njc4.Yi66rQ.Xr4XrHJ2RdEie47QPat8atMIugI").build();
+            api = JDABuilder.createDefault("<SECRET TOKEN>").build();
             System.out.println(api.awaitReady().getGuilds().size());
             List<TextChannel> textChannels = api.getTextChannels();
             System.out.println(textChannels.size());
